@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Runtime.Serialization;
 using SMSApi.Api.Response.ResponseResolver;
 
@@ -56,5 +57,9 @@ namespace SMSApi.Api.Response
                 return size;
             }
         }
+
+#if NETSTANDARD
+        public Dictionary<int, Action<Stream>> HandleExceptionActions() => new();
+#endif
     }
 }

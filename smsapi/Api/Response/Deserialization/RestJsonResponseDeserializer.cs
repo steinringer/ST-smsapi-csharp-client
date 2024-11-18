@@ -34,7 +34,11 @@ public class RestJsonResponseDeserializer : IDeserializer
         var responseStatusCode = (int)responseEntity.StatusCode;
         var matchedExceptions = exceptionsMatchers
             .Where(pair => pair.Key.Equals(responseStatusCode))
+#if !NETSTANDARD
             .ToHashSet();
+#else
+            .ToDictionary(pair => pair.Key, pair => pair.Value);
+#endif
 
         if (matchedExceptions.Count > 0) matchedExceptions.First().Value.Invoke(responseEntity.Content.Result);
 
