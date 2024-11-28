@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smsapi", "smsapi\smsapi.csproj", "{05C2A720-2CD1-401B-A832-9CE85313C248}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smsapiTests", "smsapiTests\smsapiTests.csproj", "{A0C118D0-9435-477B-92B5-0918E1CDADAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net471-smsapi", "net471-smsapi\net471-smsapi.csproj", "{B7BAFF0B-FA75-4F03-BCAF-57AFD3D8F361}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net472-smsapi", "net471-smsapi\net472-smsapi.csproj", "{B7BAFF0B-FA75-4F03-BCAF-57AFD3D8F361}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
