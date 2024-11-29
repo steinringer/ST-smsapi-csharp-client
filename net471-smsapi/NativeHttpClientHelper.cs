@@ -25,7 +25,7 @@ namespace SMSApi.Api
             switch (method)
             {
                 case RequestMethod.GET:
-                    var getResponse = await httpClient.GetAsync(uri, cancellationToken).ConfigureAwait(false);
+                    var getResponse = await httpClient.GetAsync(uri, cancellationToken);
 
                     return new HttpResponseEntity(getResponse.Content.ReadAsStreamAsync(), getResponse.StatusCode);
 
