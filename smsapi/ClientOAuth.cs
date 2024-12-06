@@ -15,6 +15,10 @@ namespace SMSApi.Api
         }
 
         public override KeyValuePair<string, string> DefaultRequestHeaders =>
+#if !NETSTANDARD
             KeyValuePair.Create("Authorization", $"Bearer {_token}");
+#else
+            new KeyValuePair<string, string>("Authorization", $"Bearer {_token}");
+#endif
     }
 }
