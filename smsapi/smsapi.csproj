@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <ProductVersion>8.0.30703</ProductVersion>
@@ -18,7 +18,7 @@
     </PropertyGroup>
     <PropertyGroup>
         <PackageId>SMSAPI.pl</PackageId>
-        <PackageVersion>3.0.0</PackageVersion>
+        <PackageVersion>3.0.1.0</PackageVersion>
         <PackagerequireLicenseAcceptance>false</PackagerequireLicenseAcceptance>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://www.smsapi.com</PackageProjectUrl>

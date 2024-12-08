@@ -1,10 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net472</TargetFrameworks>
+    <TargetFrameworks>net472;net461</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <LangVersion>9.0</LangVersion>
+    <Authors>SBU</Authors>
+    <Copyright>Steinringer</Copyright>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>$(AssemblyName)</PackageId>
+    <Title>ST-SMSApi(net472)</Title>
+    <Description>C# client for accessing SMS API</Description>
+    <Nullable>enable</Nullable>
+    <Version>3.0.1.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
