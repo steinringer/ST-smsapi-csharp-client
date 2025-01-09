@@ -12,7 +12,7 @@
     <Title>ST-SMSApi(net472)</Title>
     <Description>C# client for accessing SMS API</Description>
     <Nullable>enable</Nullable>
-    <Version>3.0.1.0</Version>
+    <Version>3.0.2.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
