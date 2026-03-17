@@ -95,7 +95,7 @@ namespace SMSApi.Api
 
             try
             {
-                return await client.SendRequest(method, uri, data, files, cancellationToken);
+                return Task.Run(() => client.SendRequest(method, uri, data, files, cancellationToken)).Result;
             }
             catch (System.Exception e)
             {
