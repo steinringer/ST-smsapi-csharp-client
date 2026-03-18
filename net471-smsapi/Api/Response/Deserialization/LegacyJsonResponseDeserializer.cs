@@ -26,7 +26,13 @@ namespace SMSApi.Api.Response.Deserialization
             }
             catch (SerializationException e)
             {
-                throw new HostException(e.Message, HostException.E_JSON_DECODE);
+                // deserialize response as text and throw it as message of HostException
+                data = responseEntity.Content.Result;
+                var buffer = new byte[data.Length];
+                data.Read(buffer, 0, buffer.Length);
+
+
+                throw new HostException($"{e.Message}: {System.Text.Encoding.UTF8.GetString(buffer)}", HostException.E_JSON_DECODE);
             }
             catch (Exception e)
             {
