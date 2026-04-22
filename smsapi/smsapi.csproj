@@ -18,7 +18,7 @@
     </PropertyGroup>
     <PropertyGroup>
         <PackageId>SMSAPI.pl</PackageId>
-        <PackageVersion>3.0.2.0</PackageVersion>
+        <PackageVersion>3.0.3.0</PackageVersion>
         <PackagerequireLicenseAcceptance>false</PackagerequireLicenseAcceptance>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://www.smsapi.com</PackageProjectUrl>
